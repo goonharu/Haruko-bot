@@ -1,4 +1,5 @@
 const Discord = require("discord.js")
+require("dotenv").config()
 
 const TOKEN = "OTM2NjE1NDE1NDMyNDk5Mjcx.YfPxFA.kwAsqtvXW3Qq1RuQQVvj916MCPc"
 
@@ -22,4 +23,4 @@ client.on("messageCreate", (message) => {
     }
 })
 
-client.login(TOKEN)
+client.login(process.env.TOKEN)
